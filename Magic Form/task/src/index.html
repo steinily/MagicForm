@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+
+</head>
+<body >
+    <nav>
+        <ul>
+        <li><a href="index.html" id="form-link">For Link</a></li>
+        <li><a href="history.html" id="history-link">history link</a></li>
+        </ul>
+    </nav>
+
+<div>
+    <form id="form-l" >
+        <label for="first-name">First Name</label><br>
+        <input id="first-name" type="text" placeholder="First Name" name="first-name" oninput="handleInput(this.value ,this.id)">
+        <label for="last-name">Last Name</label> <br>
+        <input id="last-name" type="text" name="last-name" placeholder="Last Name" oninput="handleInput(this.value ,this.id)">
+        <label for="email">Email</label><br>
+        <input id="email" type="email" name="email" placeholder="Email" oninput="handleInput(this.value ,this.id)">
+        <label for="phone">Phone</label><br>
+        <input id="phone" type="text" name="phone" placeholder="Phone" oninput="handleInput(this.value ,this.id)">
+        <label for="company">Company</label><br>
+        <input id="company" type="text" name="company" placeholder="Company" oninput="handleInput(this.value ,this.id)">
+        <label for="address">Address</label><br>
+        <input id="address" type="text" name="address" placeholder="Address" oninput="handleInput(this.value ,this.id)">
+        <button id="submit-button" type="submit" onclick="saveData()">Submit</button>
+
+    </form>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
